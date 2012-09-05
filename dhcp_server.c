@@ -56,9 +56,8 @@ int ip_asc2bytes(char bytes[], char* ip_address)
         buff[4] = '\0';
         bytes[ret++] = atoi(buff);
     }
-
-    return ret;
     INFO("ip_asc2bytes==>");
+    return ret;
 }
 
 int start_server(char *config_file)
