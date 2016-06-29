@@ -39,7 +39,7 @@ int ip_asc2bytes(char bytes[], char* ip_address)
     {
         if('.' == ip_address[i])
         {
-            buff[4] = '\0';
+            buff[3] = '\0';
             bytes[ret++] = atoi(buff);
             memset(buff, 0, 4);
             buff_index = 0;
